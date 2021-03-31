@@ -7,12 +7,13 @@ import (
 	"net"
 )
 
-var port = flag.String("server", "127.0.0.1:3000", "Host:Porta do servidor UDP")
-var msg = flag.String("msg", "Olá", "Mensagem a ser enviada para o servidor")
+var (
+	port = flag.String("server", "127.0.0.1:3000", "Host:Porta do servidor UDP")
+	msg  = flag.String("msg", "Olá", "Mensagem a ser enviada para o servidor")
+)
 
 func main() {
 	flag.Parse()
-	
 
 	// Abrindo conexão
 	conn, err := net.Dial("udp", *port)
