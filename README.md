@@ -2,4 +2,4 @@
 
 # Aplicações de Rede
 
-- echo-server: servidor que retorna para o cliente a mensagem que foi enviada.
+- http-echo-cliente: servidor que retorna pra o cliente a mensagem enviada utilizando o protocolo HTTP (de aplicação)
